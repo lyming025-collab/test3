@@ -9,8 +9,8 @@ import { ButterflySvg, FanCrest } from './DecorativeSVG';
  * Respects Khmer typography: HTML text layered over SVG, safe vertical padding.
  */
 export default function CoupleNameLogo({
-  groomShort = "រិទ្ធី",
-  brideShort = "ចរិយា",
+  groomShort = "សេងហួត",
+  brideShort = "វីរ៉ូហ្សា",
   size = "md", // 'sm' | 'md' | 'lg'
   animated = true,
   className = ""

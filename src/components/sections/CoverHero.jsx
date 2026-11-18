@@ -5,6 +5,7 @@ import { CornerFlourish, FanCrest, OrnateDivider } from '../common/DecorativeSVG
 import { ChevronDown, MapPin } from 'lucide-react';
 import { WEDDING_DATA } from '../../data/wedding';
 import { I18N } from '../../data/i18n';
+import heroImage from '../../assets/images/gallery/ZF1_0484.jpg'; //change heor pic here!!
 
 /**
  * COVER HERO SECTION (គម្រប និងទំព័រដើមចម្បង - ពណ៌ផ្កាឈូកស្ដើង & ស្ទាយ Anime រ៉ូមែនទិក)
@@ -22,7 +23,7 @@ export default function CoverHero({ currentLang = 'km' }) {
       <div
         className="absolute inset-0 bg-cover bg-center z-0 scale-102 transform transition-transform duration-1000"
         style={{
-          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qnD9XURf_8U6Cst9XxgkU3dkv0Ab0dpswaDn-82xH_jh6R8cm-N3Xteu&s=10')`,
+          backgroundImage: `url(${heroImage})`,
           filter: 'brightness(0.95) contrast(1.02) saturate(1.1)'
         }}
       />

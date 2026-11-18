@@ -63,7 +63,7 @@ export const I18N = {
     loveStorySubtitle: "ពីការជួបគ្នាដំបូង រហូតដល់ថ្ងៃសន្យាជាគូជីវិត",
 
     // Candlelight
-    candlelightTitle: "រាត្រីគោមបណ្តែតទឹក",
+    candlelightTitle: "ពរជ័យ សិរីមង្គល",
     candlelightHint: "ប៉ះលើផ្ទៃទឹកដើម្បីបណ្តែតផ្កាឈូក និងប្រសិទ្ធពរជ័យ",
 
     // Gallery

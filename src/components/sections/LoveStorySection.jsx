@@ -6,8 +6,8 @@ import { WEDDING_DATA } from '../../data/wedding';
 import { I18N } from '../../data/i18n';
 
 /**
- * LOVE STORY SECTION (ដំណើរនៃសេចក្តីស្រឡាញ់ - ពណ៌ផ្កាឈូកស្ដើង & ស្ទាយ Anime)
- * Auto-scrolling infinite photo strip with pause-on-hover.
+- LOVE STORY SECTION (ដំណើរនៃសេចក្តីស្រឡាញ់ - ពណ៌ផ្កាឈូកស្ដើង & ស្ទាយ Anime)
+- Auto-scrolling infinite photo strip with pause-on-hover.
  */
 export default function LoveStorySection({ currentLang = 'km' }) {
   const t = I18N[currentLang];
@@ -67,14 +67,14 @@ export default function LoveStorySection({ currentLang = 'km' }) {
                     <CornerFlourish position="top-left" className="absolute top-2 left-2 w-8 h-8 opacity-80" />
                     <CornerFlourish position="top-right" className="absolute top-2 right-2 w-8 h-8 opacity-80" />
 
-                    {/* Photo Frame */}
+                    {/* Photo Frame - Change aspect ratio here if needed: aspect-square or aspect-[3/4] */}
                     <div className="w-full aspect-[4/3] rounded-xl overflow-hidden relative mb-4 bg-white p-1 border border-pink-200 shadow-sm">
                       <div className="w-full h-full rounded-lg overflow-hidden">
                         <img
                           src={story.photo}
                           alt={story.titleKm}
                           loading={isDuplicate ? 'lazy' : 'eager'}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                         />
                       </div>
 

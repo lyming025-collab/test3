@@ -1,4 +1,13 @@
 // src/data/wedding.js
+import groomImage from "../assets/images/gallery/groom.jpg";
+import brideImage from "../assets/images/gallery/bride.jpg";
+import firstStoryImage from '../assets/images/gallery/ZF1_0484.jpg'; 
+import galleryImg1 from '../assets/images/gallery/1.jpg';
+import galleryImg2 from '../assets/images/gallery/2.jpg';
+import galleryImg3 from '../assets/images/gallery/3.jpg';
+import galleryImg4 from '../assets/images/gallery/4.jpg';
+import galleryImg5 from '../assets/images/gallery/5.jpg';
+import galleryImg6 from '../assets/images/gallery/6.jpg';
 /**
  * WEDDING DETAILS DATA FILE (ឯកសារព័ត៌មានលម្អិតអាពាហ៍ពិពាហ៍)
  * All couple details, schedule, venue, and media are centralized here.
@@ -8,47 +17,47 @@
 export const WEDDING_DATA = {
   // Groom's Information (ព័ត៌មានកូនកំលោះ)
   groom: {
-    khmerName: "រិទ្ធី សុវណ្ណ",
-    englishName: "Rithy Sovann",
-    shortKhmer: "រិទ្ធី",
-    shortEnglish: "Rithy",
-    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qnD9XURf_8U6Cst9XxgkU3dkv0Ab0dpswaDn-82xH_jh6R8cm-N3Xteu&s=10",
+    khmerName: "ថាន​ សេងហួត",
+    englishName: "Than Senghouth",
+    shortKhmer: "សេងហួត",
+    shortEnglish: "Senghouth",
+    avatar: groomImage,
     parents: {
-      father: "លោក ហេង រិទ្ធី",
-      mother: "និងលោកស្រី គង់ សុខា"
+      father: "លោក ថែ វ៉ាន់ថាន",
+      mother: "និងលោកស្រី សែម សារឿន"
     }
   },
 
   // Bride's Information (ព័ត៌មានកូនក្រមុំ)
   bride: {
-    khmerName: "ចរិយា ទេវី",
-    englishName: "Chariya Davy",
-    shortKhmer: "ចរិយា",
-    shortEnglish: "Chariya",
-    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qnD9XURf_8U6Cst9XxgkU3dkv0Ab0dpswaDn-82xH_jh6R8cm-N3Xteu&s=10",
+    khmerName: "សៀង រីវ៉ូហ្សា",
+    englishName: "Seang Viroza",
+    shortKhmer: "រីវ៉ូហ្សា",
+    shortEnglish: "Viroza",
+    avatar: brideImage,
     parents: {
-      father: "លោក ជា ចរិយា",
-      mother: "និងលោកស្រី អ៊ុំ សុវណ្ណារី"
+      father: "លោក ឆោម សៀង",
+      mother: "និងលោកស្រី ហុង ចន្ធា"
     }
   },
 
   // Event Date & Lunar Date (កាលបរិច្ឆេទ និងថ្ងៃខែចន្ទគតិ)
   event: {
-    isoDate: "2026-11-28T07:00:00+07:00",
-    dayNameKm: "ថ្ងៃសៅរ៍",
-    dayKm: "២៨",
-    monthKm: "វិច្ឆិកា",
-    yearKm: "២០២៦",
-    dayEn: "28",
-    monthEn: "November",
-    yearEn: "2026",
-    lunarDateKm: "ត្រូវនឹង ថ្ងៃ១៥កើត ពេញបូណ៌មី ខែកត្តិក ឆ្នាំរោង អដ្ឋស័ក ព.ស.២៥៧០",
-    lunarDateEn: "15th Waxing Moon of Kattika, Year of the Dragon, B.E. 2570"
+    isoDate: "2027-01-17T07:00:00+07:00",
+    dayNameKm: "ថ្ងៃអាទិត្យ",
+    dayKm: "១៧",
+    monthKm: "មករា",
+    yearKm: "២០២៧",
+    dayEn: "17",
+    monthEn: "January",
+    yearEn: "2027",
+    lunarDateKm: "ត្រូវនឹង ១០កើត ខែបុស្ស ឆ្នាំមមី អដ្ឋស័ក ពុទ្ធសករាជ ២៥៧០",
+    lunarDateEn: "0 Koeut, month of Bos, year of Horse, Ardaksak era, Buddhist era 2570"
   },
 
   // Venue & Location (ទីកន្លែងប្រារព្ធពិធី)
   venue: {
-    nameKhmer: "សណ្ឋាគារ ហ្គាដិន ស៊ីធី (Garden City Hotel)",
+    nameKhmer: "ព្រែកតាមាក់ ខេត្តកណ្តាល",
     nameEnglish: "Garden City Hotel, Grand Ballroom",
     addressKhmer: "ផ្លូវលីយ៉ុងផាត់ ភូមិព្រែកតារ័ត្ន សង្កាត់ព្រែកតាសេក ខណ្ឌជ្រោយចង្វារ រាជធានីភ្នំពេញ",
     addressEnglish: "Ly Yong Phat Blvd, Prek Ta Sek, Chroy Changvar, Phnom Penh",
@@ -97,13 +106,13 @@ export const WEDDING_DATA = {
   // Love Story Milestones (ដំណើរនៃសេចក្តីស្រឡាញ់)
   loveStory: [
     {
-      year: "២០២១",
-      yearEn: "2021",
+      year: "២០២២",
+      yearEn: "2022",
       titleKm: "ថ្ងៃដំបូងដែលបានជួបគ្នា",
       titleEn: "The First Meeting",
       captionKm: "និស្ស័យបាននាំផ្លូវឱ្យយើងជួបគ្នាដោយមិនបានព្រាងទុក",
       captionEn: "Destiny guided our paths to cross unexpectedly",
-      photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10"
+      photo: firstStoryImage,
     },
     {
       year: "២០២៣",
@@ -112,7 +121,7 @@ export const WEDDING_DATA = {
       titleEn: "A Promise Under the Stars",
       captionKm: "ចាប់ដៃគ្នាកាត់ឧបសគ្គ ដោយក្តីស្រឡាញ់ និងការយោគយល់",
       captionEn: "Walking hand in hand through every season of life",
-      photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10"
+      photo: brideImage,
     },
     {
       year: "២០២៦",
@@ -121,7 +130,7 @@ export const WEDDING_DATA = {
       titleEn: "Forever Begins Today",
       captionKm: "រួមចិត្ត រួមកាយ ជាគូជីវិតរហូតតរៀងទៅ",
       captionEn: "Two souls united together forever",
-      photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10"
+      photo: groomImage,
     }
   ],
 
@@ -130,37 +139,37 @@ export const WEDDING_DATA = {
     {
       id: 1,
       title: "Sweet Embrace",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10",
+      url: galleryImg1,
       span: "row-span-2 col-span-1"
     },
     {
       id: 2,
       title: "Royal Romance",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10",
+      url: galleryImg2,
       span: "row-span-1 col-span-1"
     },
     {
       id: 3,
       title: "Golden Hour Smile",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10",
+      url: galleryImg3,
       span: "row-span-1 col-span-1"
     },
     {
       id: 4,
       title: "Everlasting Promise",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10",
+      url: galleryImg4,
       span: "row-span-2 col-span-1"
     },
     {
       id: 5,
       title: "Traditional Grace",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10",
+      url: galleryImg5,
       span: "row-span-1 col-span-1"
     },
     {
       id: 6,
       title: "Warm Embrace",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10",
+      url: galleryImg6,
       span: "row-span-1 col-span-1"
     }
   ],
@@ -169,18 +178,12 @@ export const WEDDING_DATA = {
   gifts: [
     {
       bankName: "ABA Bank",
-      accountName: "RITHY SOVANN",
+      accountName: "SEANG VIROZA",
       accountNumber: "001 234 567",
       currency: "USD / KHR",
       qrCodeImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://link.payway.com.kh/aba?id=001234567"
     },
-    {
-      bankName: "ACLEDA Bank",
-      accountName: "CHARIYA DAVY",
-      accountNumber: "1234-5678-9012-34",
-      currency: "USD / KHR",
-      qrCodeImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://acledabank.com.kh/qr?acc=123456789012"
-    }
+    
   ],
 
   // Audio / Music (បទចម្រៀងមង្គលការ)

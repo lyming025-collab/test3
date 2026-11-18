@@ -103,8 +103,9 @@ export default function EnvelopeScreen({
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2000&auto=format&fit=crop')`,
+          backgroundImage: `url('src/assets/images/gallery/wedding.png')`,
           filter: 'blur(10px) brightness(0.85) saturate(1.15)'
+          
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#fff5f8]/85 via-[#fdebed]/70 to-[#fce4ea]/92 pointer-events-none" />

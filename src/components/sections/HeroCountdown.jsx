@@ -4,7 +4,7 @@ import { useCountdown } from '../../hooks/useCountdown';
 
 // ១. Import រូបភាព (សូមប្តូរឈ្មោះ File អោយត្រូវនឹងរូបភាពពិតក្នុង Folder របស់អ្នក)
 // កែបន្ទាត់ទី ៥ ទៅជាបែបនេះ
-import bgImage from '../../assets/images/gallery/wedding.png';
+import bgImage from '../../assets/images/gallery/DSC_9222.jpg';
 
 const HeroCountdown = () => {
   const { days, hours, minutes, seconds } = useCountdown(WEDDING_DATA.eventDate);

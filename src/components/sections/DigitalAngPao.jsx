@@ -36,37 +36,37 @@ export default function DigitalAngPao({ currentLang = 'km' }) {
       {/* Background Subtle Rose Paper Texture */}
       <div className="absolute inset-0 texture-envelope-pink opacity-25 pointer-events-none" />
 
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center justify-center text-center w-full">
         {/* Khmer Temple Crest & Heading */}
-        <FanCrest className="w-16 h-10 mb-2" />
-        <h2 className="font-moul text-2xl md:text-3xl gold-foil-text">
+        <FanCrest className="w-16 h-10 mb-2 mx-auto" />
+        <h2 className="font-moul text-2xl md:text-3xl gold-foil-text text-center w-full">
           {t.giftTitle}
         </h2>
-        <p className="font-kantumruy text-xs md:text-sm text-[#7a3246] mt-1 max-w-lg font-semibold">
+        <p className="font-kantumruy text-xs md:text-sm text-[#7a3246] mt-1 max-w-lg font-semibold text-center mx-auto">
           {t.giftSubtitle}
         </p>
-        <OrnateDivider className="w-48 h-4 my-2 opacity-90" />
+        <OrnateDivider className="w-48 h-4 my-2 opacity-90 mx-auto" />
 
-        {/* Gift QR Cards Grid (Always Visible, No Toggle) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 w-full max-w-2xl">
+        {/* Gift QR Cards Container (Flex Centered for 1 or more items) */}
+        <div className={`mt-5 w-full max-w-2xl mx-auto ${gifts.length === 1 ? 'flex justify-center' : 'grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center'}`}>
           {gifts.map((gift, index) => (
             <div
               key={index}
-              className="pink-anime-card rounded-2xl p-6 flex flex-col items-center relative group hover:border-[#d4af37] transition-all shadow-[0_12px_35px_rgba(235,160,180,0.22)]"
+              className="pink-anime-card rounded-2xl p-6 flex flex-col items-center justify-center relative group hover:border-[#d4af37] transition-all shadow-[0_12px_35px_rgba(235,160,180,0.22)] w-full max-w-sm mx-auto"
             >
               <CornerFlourish position="top-left" className="absolute top-2 left-2 w-8 h-8 opacity-80" />
               <CornerFlourish position="top-right" className="absolute top-2 right-2 w-8 h-8 opacity-80" />
 
               {/* Bank Name */}
-              <div className="flex items-center gap-2 mb-3">
-                <CreditCard className="w-4 h-4 text-[#c59728]" />
-                <h3 className="font-moul text-base gold-foil-subtle">
+              <div className="flex items-center justify-center gap-2 mb-6 w-full text-center">
+                <CreditCard className="w-4 h-4 text-[#c59728] shrink-0" />
+                <h3 className="font-moul text-base gold-foil-subtle text-center">
                   {gift.bankName}
                 </h3>
               </div>
 
               {/* Always Visible QR Code */}
-              <div className="relative w-48 h-48 bg-white p-3 rounded-2xl border-2 border-[#d4af37]/70 shadow-md flex items-center justify-center my-2 group-hover:scale-102 transition-transform">
+              <div className="relative w-48 h-48 bg-white p-3 rounded-2xl border-2 border-[#d4af37]/70 shadow-md flex items-center justify-center my-2 group-hover:scale-102 transition-transform mx-auto">
                 <img
                   src={gift.qrCodeImage}
                   alt={`${gift.bankName} QR Code`}
@@ -75,11 +75,11 @@ export default function DigitalAngPao({ currentLang = 'km' }) {
               </div>
 
               {/* Account Details */}
-              <div className="text-center mt-3 space-y-1">
-                <p className="font-kantumruy font-bold text-sm tracking-wide text-[#5c2838]">
+              <div className="text-center mt-3 space-y-1 w-full flex flex-col items-center justify-center">
+                <p className="font-kantumruy font-bold text-sm tracking-wide text-[#5c2838] text-center">
                   {gift.accountName}
                 </p>
-                <p className="font-mono text-sm tracking-wider text-[#7a3246] font-semibold">
+                <p className="font-mono text-sm tracking-wider text-[#7a3246] font-semibold text-center">
                   {gift.accountNumber}
                 </p>
                 <span className="inline-block text-[10px] font-bold text-[#8f5f14] bg-[#fdebed] border border-[#e8aebb] px-2.5 py-0.5 rounded-full mt-1">
@@ -88,7 +88,7 @@ export default function DigitalAngPao({ currentLang = 'km' }) {
               </div>
 
               {/* Actions: Copy & Save QR */}
-              <div className="flex items-center gap-2 mt-5 w-full">
+              <div className="flex items-center justify-center gap-2 mt-5 w-full">
                 <button
                   type="button"
                   onClick={() => handleCopy(gift.accountNumber, index)}

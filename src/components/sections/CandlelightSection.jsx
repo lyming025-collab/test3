@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import { FanCrest, OrnateDivider } from '../common/DecorativeSVG';
 import { Sparkles } from 'lucide-react';
 import { I18N } from '../../data/i18n';
+import candlelightImage from '../../assets/images/gallery/ZF1_0484.jpg';
 
 /**
  * CANDLELIGHT & WATER LOTUS SECTION (រាត្រីគោមបណ្តែតទឹក - ស្ទាយ Anime រ៉ូមែនទិក)
@@ -59,7 +60,7 @@ export default function CandlelightSection({ currentLang = 'km' }) {
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
         style={{
-          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJvgyEKbVP4PEz18ZIeBU-_fRxWd74VxzHTiIesEX3ZBSqMfVv2IPw0M&s=10')`,
+          backgroundImage: `url(${candlelightImage})`,
           filter: 'brightness(0.55) contrast(1.1) saturate(1.3)'
         }}
       />
